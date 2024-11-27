@@ -4,33 +4,35 @@
 }
 ul{
     list-style:none;
+    background-color:grey;
 }
 ul.parent{
     display:flex;
     justify-content:center;
-    background-color:grey;
+    padding:10px;
 li{
     position:relative;
-    &:hover{
-        ul{
-            display: block;
-        }
-    }
     a{
-        padding:10px;
+        padding:5px;
         text-transform:uppercase;
         text-decoration:none;
-        font-size:18px;
+        font-size:25px;
         color: #fff;
         &:hover{
             color:red;
         }
         }
-        }
-    }
     ul{
         position:absolute;
         display:none;
         background-color: grey;
+        width: 150px;
         top: 24px;
     }
+    &:hover{
+        ul{
+            display: block;
+        }
+    }
+}
+}
