@@ -5,13 +5,13 @@
 
 ul {
   list-style: none;
-  background-color: grey;
 }
 
 ul.parent {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 10px;
+  background-color: grey;
 }
 ul.parent li {
   position: relative;
@@ -22,6 +22,7 @@ ul.parent li a {
   text-decoration: none;
   font-size: 25px;
   color: #fff;
+  background: black;
 }
 ul.parent li a:hover {
   color: red;
@@ -29,10 +30,50 @@ ul.parent li a:hover {
 ul.parent li ul {
   position: absolute;
   display: none;
-  background-color: grey;
   width: 150px;
   top: 24px;
 }
 ul.parent li:hover ul {
   display: block;
+}
+
+.header {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 240px;
+}
+
+.content {
+  padding: 10px;
+}
+.content .products {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.content .products li {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  background-color: grey;
+}
+.content .products li button:hover {
+  color: aqua;
+  cursor: pointer;
+}
+.content .products li img {
+  height: 160px;
+  width: 180px;
+  position: absolute;
+  bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
